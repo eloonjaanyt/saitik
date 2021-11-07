@@ -1,0 +1,205 @@
+@font-face {
+	font-family: 'Open Sans Semibold'; 
+	src: local('Open Sans Semibold'),
+}
+
+body {
+    padding: 0;
+    font-family: 'Open Sans Semibold';
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: grid;
+    grid-template: minmax(120px, auto) 1fr minmax(63px,auto) / 1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+
+}
+.header {
+    max-width: 1400px;
+    grid-area: header;
+    display: grid;
+    grid-template: 120px / minmax(auto, 300px) minmax(auto, 1175px);
+    align-items: center;
+}
+.header_logo {
+    margin-left: 100px;
+
+}
+.picture {
+    height: 120px;
+}
+
+
+
+.header_menu {
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: end;
+    margin-right: 100px;
+}
+menu {
+    list-style: none;
+}
+menu li {
+    display: inline-block;
+}
+menu li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    padding: 0 25px;
+}
+.main{
+    grid-area: main;
+    display: grid;
+    grid-template: 655px 655px 1620px 1120px 1100px 1870px 1255px 1250px/ 1fr;
+    grid-template-areas: 
+    "WDP"
+    "about_us"
+    "our_services"
+    "latest_works"
+    "pricing_plan"
+    "members"
+    "blog"
+    "contacts"
+    ;
+}
+
+.WDP {
+    display:grid;
+    grid-area: WDP;
+    background-image: url(../web2.jpg);
+    background-size: cover;
+    background-position: 0 100%;
+    color: #fff;
+    text-align: center;
+}
+
+.text_WDP {
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+}
+.content_title {
+    letter-spacing:5px;
+    margin: 0;
+    font-size: 55px;
+    display:grid;
+    align-items:end;
+}
+
+.micro_text {
+    letter-spacing:2px;
+    font-size: 20px;
+    display:grid;
+    align-items: start;
+}
+
+.Buttons {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 25px;
+    transition: 0.3s;
+}
+
+.Button1 {
+    justify-self: end;
+}
+
+.Button2  {
+    justify-self: start;
+}
+
+.button_empty  {
+    background: none;
+    padding: 25px 45px;
+    border: 2px solid #fff;
+    font-size: 18px;
+    color: #fff;
+}
+
+.button_full {
+    background: #00897b;
+    border: 2px solid #00897b;
+    padding: 25px 45px;;
+    font-size: 18px;
+    color: #fff;
+
+}
+
+.button_empty:hover, .button_full:hover {
+    border: 2px solid #fff;
+    background-color: #054d45;
+}
+
+.angle1 {
+    margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+.about_us {
+    display:grid;
+    grid-area: about_us;
+}
+
+.our_services {
+    display:grid;
+    grid-area: our_services;
+    background-color: #e4fdf9;
+}
+
+.latest_works {
+    display:grid;
+    grid-area: latest_works;
+}
+
+.pricing_plan {
+    display:grid;
+    grid-area: pricing_plan;
+    background-color:#f0f1f1;
+}
+
+.members {
+    display:grid;
+    grid-area: members ;
+}
+
+.blog {
+    display:grid;
+    grid-area: blog;
+    background-color: #e4fdf9;
+}
+
+.contacts {
+    display:grid;
+    grid-area: contacts;
+    background-image: url(../picture2.jpg);
+}
+
+
+
+
+
+
+
+
+
+
+.copy {
+    color: #000;
+    font-size: 18px;
+    font-family: 'Open Sans Semibold';
+    text-align: center; 
+}
